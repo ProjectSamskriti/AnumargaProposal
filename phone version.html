@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Samskriti | anumArga</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --gold: #c5a059;
+  --dark: #071426;
+  --dark-soft: #0d2340;
+  --off-white: #f4f1ea;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--off-white);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.gold-text { color: var(--gold); }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(7,20,38,0.15) 0%,
+    rgba(7,20,38,0.18) 35%,
+    rgba(7,20,38,0.62) 70%,
+    rgba(7,20,38,0.95) 100%
+  );
+}
+
+@keyframes slow-zoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.06); }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 24s infinite alternate linear;
+}
+
+.section-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.45;
+  margin: 18px auto 0;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #071426; }
+::-webkit-scrollbar-thumb { background: #29405f; border-radius: 10px; }
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img src="019A3861.jpg.jpg"
+         class="w-full h-full object-cover opacity-70 animate-slow-zoom"
+         alt="hero">
+    <div class="absolute inset-0 hero-gradient"></div>
+  </div>
+
+  <div class="relative z-10 text-center px-5 sm:px-6 fade-in max-w-5xl mx-auto">
+    <div class="inline-block mb-4 overflow-hidden">
+      <span class="block gold-text tracking-[0.35em] text-[9px] sm:text-[10px] uppercase font-semibold">
+        Offering Indian Classical Arts to the World
+      </span>
+    </div>
+
+    <h1 class="text-4xl sm:text-5xl md:text-7xl font-light tracking-tight mb-4 leading-none">
+      Project <span class="italic text-white/95">Samskriti</span>
+    </h1>
+
+    <h2 class="text-3xl sm:text-4xl md:text-6xl italic gold-text mb-4 leading-none">
+      anumArga
+    </h2>
+
+    <p class="text-gray-300 max-w-xl mx-auto text-base sm:text-lg md:text-2xl font-light italic leading-relaxed">
+      Seeking a Path
+    </p>
+  </div>
+</section>
+
+<!-- PROJECT SAMSKRITI -->
+<section class="relative py-16 sm:py-20 md:py-28 overflow-hidden">
+  <div class="absolute inset-0 opacity-20">
+    <img src="visual2.jpg.jpg"
+         alt="Project Samskriti ensemble performance"
+         class="w-full h-full object-cover">
+    <div class="absolute inset-0"
+         style="background: linear-gradient(to bottom, rgba(7,20,38,0.65), rgba(7,20,38,0.92));"></div>
+  </div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-5 sm:px-6">
+    <div class="max-w-3xl fade-in">
+      <span class="gold-text font-bold tracking-[0.25em] text-[9px] sm:text-[10px] uppercase italic mb-4 block">
+        Envisioned by Sadhguru
+      </span>
+
+      <h2 class="text-4xl sm:text-5xl md:text-7xl mb-8 leading-[1.05] font-light">
+        Project <br><span class="italic gold-text">Samskriti</span>
+      </h2>
+
+      <div class="space-y-6 sm:space-y-8 text-gray-200 text-base sm:text-lg leading-relaxed border-l border-white/10 pl-4 sm:pl-6">
+        <p>
+          Envisioned by Sadhguru, Project Samskriti is a contemporary ensemble performing and offering Indian classical arts across the globe. Seamlessly blending classical dance, music and martial arts into an exuberant expression of art and spirituality, Project Samskriti transcends cultural boundaries and captivates audiences of all backgrounds.
+        </p>
+
+        <p>
+          The group comprises alumni of Sadhguru Gurukulam Samskriti, a unique school in southern India where children begin training in Indian classical arts at the age of eight. Having imbibed these ancient arts as a part of themselves, they exude the graceful power of Kalaripayattu and embody the perfect balance of Bharatanatyam, making their every movement and expression a delight to behold.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FULL IMAGE BAND -->
+<section class="py-0">
+  <div class="fade-in">
+    <img src="visual1.jpg.jpg"
+         class="w-full h-[38vh] sm:h-[48vh] md:h-[76vh] object-cover"
+         alt="Performance visual">
+  </div>
+</section>
+
+<!-- ANUMARGA -->
+<section id="anumarga" class="py-16 sm:py-20 md:py-28 bg-[#08192d] border-y border-white/5">
+  <div class="max-w-6xl mx-auto px-5 sm:px-6">
+    <div class="mb-14 sm:mb-16 text-center fade-in">
+      <h3 class="gold-text tracking-[0.35em] text-[9px] sm:text-[10px] mb-3 uppercase font-bold">
+        Featured Performance
+      </h3>
+
+      <h2 class="text-4xl sm:text-5xl md:text-8xl italic leading-tight">
+        anumArga
+      </h2>
+
+      <div class="section-divider"></div>
+
+      <p class="text-gray-400 tracking-[0.22em] uppercase mt-6 sm:mt-8 text-[10px] sm:text-xs">
+        — Seeking a Path —
+      </p>
+
+      <p class="text-gray-400 italic mt-4 sm:mt-6 text-base sm:text-lg">
+        by Project Samskriti
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-14 fade-in">
+      <div class="border-t border-white/10 pt-5">
+        <h3 class="text-xl sm:text-2xl gold-text mb-3 font-serif italic">Devotion & Seeking</h3>
+        <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
+          The production includes poetry in adoration of Krishna, where devotees journey to Vrindavan celebrating the playful glory of the young Krishna. It also presents Arjuna’s intense sadhana as he seeks Shiva’s blessing for the Pashupatastra, culminating in his encounter with Kirata.
+        </p>
+      </div>
+
+      <div class="border-t border-white/10 pt-5">
+        <h3 class="text-xl sm:text-2xl gold-text mb-3 font-serif italic">Tapas & Surrender</h3>
+        <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
+          We witness Parvati’s deep tapas in her unwavering seeking of union with Shiva, and explore the beauty of surrender through Ahista Ahista.
+        </p>
+      </div>
+
+      <div class="border-t border-white/10 pt-5">
+        <h3 class="text-xl sm:text-2xl gold-text mb-3 font-serif italic">Devotion & Inner Vision</h3>
+        <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
+          The production also includes the story of the great devotee Ravana, whose unique blend of devotion and arrogance leads him on a quest to Kailash, and the powerful tale of a wandering saint who offers his eyes to reveal the possibility of inner vision.
+        </p>
+      </div>
+
+      <div class="border-t border-white/10 pt-5">
+        <h3 class="text-xl sm:text-2xl gold-text mb-3 font-serif italic">Shoonya</h3>
+        <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
+          Finally, through abstract movement, the production explores Shoonya — the movement of breath and the creation of the universe, reflecting on the nature of existence and the emptiness from which life emerges.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SINGLE CINEMATIC VISUAL -->
+<section class="py-14 sm:py-16 md:py-20 px-5 sm:px-6">
+  <div class="max-w-7xl mx-auto fade-in">
+    <img src="019A3843.jpg.jpg"
+         class="w-full h-[34vh] sm:h-[46vh] md:h-[72vh] object-cover border border-white/10"
+         alt="Performance visual">
+  </div>
+</section>
+
+<!-- PERFORMANCE DETAILS -->
+<section id="tech" class="py-16 sm:py-20 md:py-32 px-5 sm:px-6">
+  <div class="max-w-5xl mx-auto bg-[#0d1d31] border border-white/5 p-6 sm:p-8 md:p-20 relative overflow-hidden fade-in">
+    <div class="absolute top-0 right-0 w-40 sm:w-64 h-40 sm:h-64 bg-[rgba(197,160,89,0.08)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+
+    <h2 class="gold-text tracking-[0.28em] sm:tracking-[0.4em] text-[9px] sm:text-[10px] uppercase font-bold mb-10 sm:mb-14 relative">
+      Performance Details
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 md:gap-16 items-start">
+      <div class="space-y-8 sm:space-y-10">
+
+        <div class="flex items-start gap-5 sm:gap-8">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 border border-gold/30 flex items-center justify-center text-[10px] sm:text-xs gold-text italic flex-shrink-0">
+            01
+          </div>
+          <div>
+            <p class="text-white text-xs sm:text-sm tracking-[0.14em] sm:tracking-widest uppercase mb-1">Duration</p>
+            <p class="text-gray-400 text-sm sm:text-base font-light">90 minutes</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-5 sm:gap-8">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 border border-gold/30 flex items-center justify-center text-[10px] sm:text-xs gold-text italic flex-shrink-0">
+            02
+          </div>
+          <div>
+            <p class="text-white text-xs sm:text-sm tracking-[0.14em] sm:tracking-widest uppercase mb-1">Number of Dancers</p>
+            <p class="text-gray-400 text-sm sm:text-base font-light">9</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-5 sm:gap-8">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 border border-gold/30 flex items-center justify-center text-[10px] sm:text-xs gold-text italic flex-shrink-0">
+            03
+          </div>
+          <div>
+            <p class="text-white text-xs sm:text-sm tracking-[0.14em] sm:tracking-widest uppercase mb-1">Stage Size</p>
+            <p class="text-gray-400 text-sm sm:text-base font-light">32 ft × 24 ft minimum</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-5 sm:gap-8">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 border border-gold/30 flex items-center justify-center text-[10px] sm:text-xs gold-text italic flex-shrink-0">
+            04
+          </div>
+          <div>
+            <p class="text-white text-xs sm:text-sm tracking-[0.14em] sm:tracking-widest uppercase mb-1">Music</p>
+            <p class="text-gray-400 text-sm sm:text-base font-light">Recorded music</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-black/20 p-6 sm:p-8 md:p-10 border border-white/10 relative z-10 backdrop-blur-sm">
+        <p class="italic text-gray-300 text-xl sm:text-2xl font-serif leading-relaxed">
+          A seamless blend of classical dance, music and martial movement offered as an immersive artistic experience.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
