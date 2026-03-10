@@ -119,16 +119,51 @@ h1, h2, h3, h4, .font-serif {
 
 <!-- PROJECT SAMSKRITI -->
 <section class="relative py-16 sm:py-20 md:py-28 overflow-hidden">
-  <div class="absolute inset-0 opacity-20">
+  
+  <!-- desktop/right embedded image -->
+  <div class="hidden md:block absolute top-0 right-0 w-[52%] h-full overflow-hidden">
     <img src="visual2.jpg.jpg"
          alt="Project Samskriti ensemble performance"
-         class="w-full h-full object-cover">
+         class="w-full h-full object-cover opacity-35">
     <div class="absolute inset-0"
-         style="background: linear-gradient(to bottom, rgba(7,20,38,0.65), rgba(7,20,38,0.92));"></div>
+         style="background: linear-gradient(
+           to left,
+           rgba(7,20,38,0.10) 0%,
+           rgba(7,20,38,0.48) 34%,
+           rgba(7,20,38,0.90) 72%,
+           rgba(7,20,38,1) 100%
+         );">
+    </div>
   </div>
 
-  <div class="relative z-10 max-w-6xl mx-auto px-5 sm:px-6">
-    <div class="max-w-3xl fade-in">
+  <!-- mobile embedded background image -->
+  <div class="md:hidden absolute inset-0 overflow-hidden">
+    <img src="visual2.jpg.jpg"
+         alt="Project Samskriti ensemble performance"
+         class="w-full h-full object-cover opacity-18">
+    <div class="absolute inset-0"
+         style="background: linear-gradient(
+           to bottom,
+           rgba(7,20,38,0.78) 0%,
+           rgba(7,20,38,0.82) 38%,
+           rgba(7,20,38,0.90) 70%,
+           rgba(7,20,38,0.97) 100%
+         );">
+    </div>
+  </div>
+
+  <!-- overall blue atmosphere -->
+  <div class="absolute inset-0"
+       style="background: linear-gradient(
+         to bottom,
+         rgba(13,35,64,0.08) 0%,
+         rgba(7,20,38,0.18) 100%
+       );">
+  </div>
+
+  <!-- content -->
+  <div class="relative z-10 max-w-6xl mx-auto px-6">
+    <div class="md:max-w-[48%] fade-in">
       <span class="gold-text font-bold tracking-[0.25em] text-[9px] sm:text-[10px] uppercase italic mb-4 block">
         Envisioned by Sadhguru
       </span>
